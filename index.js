@@ -19,6 +19,6 @@ for (let index = 0; index < children.length; index++) {
     const elementList = element.classList;
     const counter = elementList.length;
     amounts.push(counter);
-    if (Math.max(amounts) === counter) { console.log({ element, counter }); };
+    if (Math.max(...amounts) === counter) { console.log({ element: element, totalclasses: counter }); };
 
 };
